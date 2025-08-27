@@ -9,7 +9,8 @@ class Jabatan extends Controller
 {
     public function index()
     {
-        return view('jabatan.index');
+        $jabatans = \App\Models\Jabatan::all();
+        return view('jabatan.index', compact('jabatans'));
     }
     public function create()
     {
