@@ -27,5 +27,5 @@ Route::get('/cabang', [Cabang::class, 'index'])->name('cabang.index');
 Route::get('/cabang/create', [Cabang::class, 'create'])->name('cabang.create');
 Route::post('/cabang/store', [Cabang::class, 'store'])->name('cabang.store');
 Route::get('/cabang/edit/{id}', [Cabang::class, 'edit'])->name('cabang.edit');
-Route::post('/cabang/update/{id}', [Cabang::class, 'update'])->name('cabang.update');
-Route::post('/cabang/destroy/{id}', [Cabang::class, 'destroy'])->name('cabang.destroy');
+Route::put('/cabang/update/{id}', [Cabang::class, 'update'])->name('cabang.update');
+Route::delete('/cabang/destroy/{id}', [Cabang::class, 'destroy'])->name('cabang.destroy');
