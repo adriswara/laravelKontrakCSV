@@ -10,7 +10,8 @@ class Pegawai extends Controller
 {
     public function index()
     {
-        return view('pegawai.index');
+        $pegawais = \App\Models\Pegawai::all();
+        return view('pegawai.index', compact('pegawais'));
     }
 
     public function create()
@@ -111,5 +112,4 @@ class Pegawai extends Controller
 
         return redirect()->route('pegawai.index')->with('success', 'Data pegawai berhasil diimpor.');
     }
-
 }
