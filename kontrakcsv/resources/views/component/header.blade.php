@@ -49,3 +49,5 @@
 
 <body>
 @include('component.navbar')
+<br>
+<br>

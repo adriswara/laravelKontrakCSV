@@ -9,7 +9,8 @@ class Cabang extends Controller
 {
     public function index()
     {
-        return view('cabang.index');
+        $cabangs = \App\Models\Cabang::all();
+        return view('cabang.index', compact('cabangs'));
     }
     public function create()
     {
