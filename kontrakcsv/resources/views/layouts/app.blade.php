@@ -48,6 +48,14 @@
 </head>
 
 <body>
-@include('component.navbar')
-<br>
-<br>
+    @include('component.navbar')
+    <br>
+    <br>
+    <div class="container mt-4">
+        @yield('content') {{-- Main content goes here --}}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

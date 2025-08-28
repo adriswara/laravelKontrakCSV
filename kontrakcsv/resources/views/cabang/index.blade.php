@@ -1,12 +1,19 @@
-@include('component.header')
+@extends('layouts.app')
+@section('title', 'List Cabang')
+@section('content')
 <!-- main content -->
 <h1>List Cabang</h1>
+<br>
+<a href="{{url('cabang/create')}}" class="btn btn-sm btn-primary">Create</a>
+<br>
+<br>
 <table>
     <thead>
         <tr>
             <th>ID</th>
             <th>Kode Cabang</th>
             <th>Nama Cabang</th>
+            <th colspan="2">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -30,4 +37,4 @@
     </tbody>
 </table>
 <!-- end main content -->
-@include('component.footer')
+@endsection

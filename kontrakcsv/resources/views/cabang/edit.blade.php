@@ -1,4 +1,6 @@
-@include('component.header')
+@extends('layouts.app')
+@section('title', 'Edit Cabang')
+@section('content')
 <!-- main content -->
 <div class="container mt-5">
     <h2>Edit Cabang</h2>
@@ -21,4 +23,4 @@
     </form>
 </div>
 <!-- end main content -->
-@include('component.footer')
+@endsection

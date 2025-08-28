@@ -1,4 +1,6 @@
-@include('component.header')
+@extends('layouts.app')
+@section('title', 'Tambah Cabang')
+@section('content')
 <!-- main content -->
 <div class="container mt-5">
     <h2>Tambah Cabang Baru</h2>
@@ -37,4 +39,4 @@
     </form>
 </div>
 <!-- end main content -->
-@include('component.footer')
+@endsection

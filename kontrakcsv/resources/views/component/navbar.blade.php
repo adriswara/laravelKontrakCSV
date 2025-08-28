@@ -16,13 +16,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">List Pegawai</a>
+                            <a class="nav-link" href="/pegawai">List Pegawai</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">List Cabang</a>
+                            <a class="nav-link" href="/cabang">List Cabang</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">List Jabatan</a>
+                            <a class="nav-link" href="/jabatan">List Jabatan</a>
                         </li>
                     </ul>
                 </div>
