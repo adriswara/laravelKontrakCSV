@@ -16,7 +16,11 @@ class Pegawai extends Controller
 
     public function create()
     {
-        return view('pegawai.create');
+        //untuk dropdown
+        $jabatan = \App\Models\Jabatan::all();
+        $cabang = \App\Models\Cabang::all();
+        //untuk dropdown
+        return view('pegawai.create', compact('jabatan', 'cabang'));
     }
     public function store(Request $request)
     {
@@ -43,8 +47,12 @@ class Pegawai extends Controller
 
     public function edit($id)
     {
+        //untuk dropdown
+        $jabatan = \App\Models\Jabatan::all();
+        $cabang = \App\Models\Cabang::all();
+        //untuk dropdown
         $pegawai = \App\Models\Pegawai::findOrFail($id);
-        return view('pegawai.edit', compact('pegawai'));
+        return view('pegawai.edit', compact('pegawai','jabatan', 'cabang'));
     }
 
     public function update(Request $request, $id)

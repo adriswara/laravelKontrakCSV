@@ -9,10 +9,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/pegawai', [Pegawai::class, 'index']);
-Route::get('/pegawai/create', [Pegawai::class, 'create']);
+Route::get('/pegawai', [Pegawai::class, 'index'])->name('pegawai.index');
+Route::get('/pegawai/create', [Pegawai::class, 'create'])->name('pegawai.create');
 Route::post('/pegawai/store', [Pegawai::class, 'store'])->name('pegawai.store');
-Route::get('/pegawai/edit/{id}', [Pegawai::class, 'edit']);
+Route::get('/pegawai/edit/{id}', [Pegawai::class, 'edit'])->name('pegawai.edit');
 Route::put('/pegawai/update/{id}', [Pegawai::class, 'update'])->name('pegawai.update');
 Route::post('/pegawai/destroy/{id}', [Pegawai::class, 'destroy'])->name('pegawai.destroy');
 
