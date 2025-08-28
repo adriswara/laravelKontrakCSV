@@ -12,6 +12,13 @@ Route::get('/', function () {
 Route::get('/pegawai', [Pegawai::class, 'index'])->name('pegawai.index');
 Route::get('/pegawai/create', [Pegawai::class, 'create'])->name('pegawai.create');
 Route::post('/pegawai/store', [Pegawai::class, 'store'])->name('pegawai.store');
+
+Route::get('/pegawai/upload', [Pegawai::class, 'upload'])->name('pegawai.upload');
+Route::post('/pegawai/upload-preview', [Pegawai::class, 'uploadPreview'])->name('pegawai.uploadPreview');
+// import
+Route::post('/pegawai/upload-insert', [Pegawai::class, 'uploadInsert'])->name('pegawai.uploadInsert');
+Route::post('/pegawai/import', [Pegawai::class, 'import'])->name('pegawai.import');
+// 
 Route::get('/pegawai/edit/{id}', [Pegawai::class, 'edit'])->name('pegawai.edit');
 Route::put('/pegawai/update/{id}', [Pegawai::class, 'update'])->name('pegawai.update');
 Route::delete('/pegawai/destroy/{id}', [Pegawai::class, 'destroy'])->name('pegawai.destroy');

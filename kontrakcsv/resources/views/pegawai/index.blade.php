@@ -5,6 +5,7 @@
 <h1>List Pegawai</h1>
 <br>
 <a href="{{url('pegawai/create')}}" class="btn btn-sm btn-primary">Create</a>
+<a href="{{url('pegawai/upload')}}" class="btn btn-sm btn-primary">Upload Sheet</a>
 <br>
 <br>
 <table>
