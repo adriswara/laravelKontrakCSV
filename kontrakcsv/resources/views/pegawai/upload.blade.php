@@ -2,7 +2,7 @@
 @section('title', 'Upload Pegawai')
 @section('content')
 <div class="container mt-5">
-    <h2>Upload Data Pegawai dari Excel/CSV</h2>
+    <h2>Upload Data Pegawai dari CSV</h2>
 
     <form action="{{ url('/pegawai/upload-preview') }}" method="POST" enctype="multipart/form-data">
         @csrf
